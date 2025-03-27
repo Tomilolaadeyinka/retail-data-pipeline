@@ -31,10 +31,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # Step 4: Run tests (e.g., pytest)
-    - name: Run tests
+    # Step 4: Run tests using unittest
+    - name: Run tests (unittest)
       run: |
-        pytest --maxfail=1 --disable-warnings -q
+        python -m unittest discover -s tests -p "*.py"  # Assuming your test files are in a folder named "tests"
 
     # Step 5: Build Docker image (if you're using Docker)
     - name: Build Docker image (if you're using Docker)
