@@ -1,10 +1,11 @@
-# retail-data-pipeline
+## retail-data-pipeline
 
-**Overview**
+## Overview
 
 This project is an end-to-end data pipeline that processes online retail transactions, loads them into a data warehouse, and visualizes insights through a dashboard. The pipeline is automated using Airflow and deployed in Google Cloud Platform (GCP).
 
-**Technologies Used**
+
+## Technologies Used
 
 **Data Lake**: Google Cloud Storage (GCS)
 
@@ -24,9 +25,10 @@ This project is an end-to-end data pipeline that processes online retail transac
 
 **CI/CD**: GitHub Actions
 
-**Cleaning and Analysing the Dataset**
 
-**DATA EXTRACTION** - Extract the CSV and convert it into a DataFrame.
+## DATA EXTRACTION
+
+Extract the CSV and convert it into a DataFrame.
 
 ```bash
 import pandas as pd
@@ -34,7 +36,7 @@ file_path = "/Users/tomilolaadeyinka/Retail Data Pipeline/online_retail.csv"
 df = pd.read_csv(file_path)
 ```
 
-**DATA TRANSFORMATION**
+## DATA TRANSFORMATION
 
 **Check for missing values in each column**
 
@@ -96,7 +98,7 @@ df_cleaned.info()
 df_cleaned = df
 ```
 
-**DATA LOADING**
+## DATA LOADING
 
 To load the cleaned data up 
 
@@ -168,7 +170,7 @@ unittest.TextTestRunner().run(test_suite)
 
 The test ran successfully, and everything passed without any issues. The message Ran 1 test in 0.123s OK indicates that the data cleaning function worked as expected.
 
-**Query the Data in BigQuery**
+## Query the Data in BigQuery
 
 Overview of the dataset
 
