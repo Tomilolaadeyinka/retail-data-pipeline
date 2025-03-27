@@ -7,13 +7,21 @@ This project is an end-to-end data pipeline that processes online retail transac
 **Technologies Used**
 
 **Data Lake**: Google Cloud Storage (GCS)
+
 **Cloud platform (Service Account/IAM, Storage)**: Google Cloud Platform (GCP)
+
 **Infrastructure as code (IaC)**: Terraform
+
 **Batch processing**: Python/Pandas
+
 **Data warehouse**: Google Big Query
+
 **Data transformation**: dbt
+
 **Workflow orchestration**: Prefect/Apache Airflow
+
 **Data visualization**: Google Looker Studio
+
 **CI/CD**: GitHub Actions
 
 **Cleaning and Analysing the Dataset**
