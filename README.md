@@ -1,10 +1,8 @@
-![image](https://github.com/user-attachments/assets/28bd931d-02f7-4dad-9f32-7c5f7e77082c)## retail-data-pipeline
-
 ## Overview
 
 This project is an end-to-end data pipeline that processes online retail transactions, loads them into a data warehouse, and visualizes insights through a dashboard. The pipeline is automated using Airflow and deployed in Google Cloud Platform (GCP).
 
-![image](https://github.com/user-attachments/assets/4320267b-4642-488a-9e3b-2de8fe3ad389)
+![image](https://github.com/user-attachments/assets/f27576d0-2ef5-44ce-bfbf-36f99fb7e3b5)
 
 
 ## Technologies Used
