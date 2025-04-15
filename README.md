@@ -168,6 +168,39 @@ unittest.TextTestRunner().run(test_suite)
 
 The test ran successfully, and everything passed without any issues. The message Ran 1 test in 0.123s OK indicates that the data cleaning function worked as expected.
 
+**Terraform**
+
+```bash
+brew install terraform
+```
+```bash
+Nano main.tf
+```
+```bash
+mkdir -p ~/projects/retail-data-pipeline/terraform
+```
+```bash
+mv /Users/tomilolaadeyinka/Downloads/retail-data-pipeline-454921-f0b5600c14e2.json ~/projects/retail-data-pipeline/terraform/
+```
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/projects/retail-data-pipeline/terraform/retail-data-pipeline-454921-f0b5600c14e2.json"
+```
+```bash
+echo 'export GOOGLE_APPLICATION_CREDENTIALS="$HOME/projects/retail-data-pipeline/terraform/retail-data-pipeline-454921-f0b5600c14e2.json"' >> ~/.zshrc
+```
+```bash
+terraform init
+```
+```bash
+terraform plan
+```
+```bash
+terraform validate
+```
+```bash
+terraform apply
+```
+
 ## Query the Data in BigQuery
 
 Overview of the dataset
@@ -181,3 +214,34 @@ Aggregating data
 ```bash
 SELECT COUNT(*) FROM `retail-data-pipeline-454921.retail_dataset.retail_data`;
 ```
+**Top 10 Most Sold Products:**
+The bar chart below shows which items sold the most by total quantity.
+
+![image](https://github.com/user-attachments/assets/72313248-6f93-4474-a4e3-6a5d274792ea)
+
+
+**Monthly Sales Trend:**
+The line chart below shows how total quantity sold changed over time month by month.
+
+![image](https://github.com/user-attachments/assets/889646ea-ac9f-4cf7-857a-490d009969c7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
