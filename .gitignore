@@ -1,0 +1,7 @@
+venv/
+.terraform/
+*.jar
+*.dylib
+__pycache__/
+*.log
+*.DS_Store
